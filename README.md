@@ -1,0 +1,1 @@
+This is my personal webpage. I'm trying to learn more html and javascript. Hopefully this will eventually serve as a digital portfolio for my work. 
