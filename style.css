@@ -1,7 +1,17 @@
 body{
-	background-color:#1F5C99;
-	color:#F0F0F0;
+	background-color: #2E3A69;
+	color:#E0E0E0;
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Andada, Georgia, Helvetica;
 }
-
+h2{
+	color:#E0E0E0;
+}
+a{
+	color:#F0F0F0;
+}
+div.ex{
+	color: yellow;
+	height:35;
+	width:50;
+}
