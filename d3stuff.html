@@ -1,0 +1,58 @@
+<!-- TODO: 
+	1) Figure out how to label objects in the svg
+	2) dynamic layout other than random
+	3) Figure our drag/drop capabilities. 
+	>
+-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8"> </meta>
+		<link type="text/css" href="style.css" rel="stylesheet"/>
+		<script type="text/javascript" src="d3/d3.v3.js"> </script>
+	</head>
+	<body>
+	</body>
+		<script type="text/javascript">
+		d3.select("body").append("p").text("Understanding the D3 approach... with three little circles. Thanks, Mike Bostock");
+		d3.select("body").append("svg")
+		 				.attr("height", 360)
+		 				.attr("width", 450);
+
+		 var dataset= [40, 10, 20];
+		 var c_data=
+		{"circles":
+			[
+				{"name": "first circle", 
+				"value":10,
+				"color" : "blue"
+				},
+				{"name": "second",
+				"value": 20,
+				"color": "yellow"
+				},
+				{
+				"name": "third",
+				"value": 30,
+				"color": "red"
+				}
+			]
+		}
+		 var svg= d3.select("body").select("svg");
+		 var circle=svg.selectAll("circle");
+		 circle.data(c_data['circles'])
+		 	.enter()
+		 	.append("circle")
+		 		.style("fill", function(d){return d['color']})
+		 		.style("stroke", "#CCCCCC")
+		 		.attr("cy", 90)
+		 		.attr("cx", function(){return Math.random()*360 + 30;})
+		 		.attr("r", function(d){return d['value']});
+		 // svg.append("circle")
+		 // 	.attr("class", "sun")
+		 // 	.attr("fill", "yellow")
+		 // 	.attr("cx", 180)
+		 // 	.attr("cy", 90)
+		 // 	.attr("r", 45);
+        </script>
+</html>
