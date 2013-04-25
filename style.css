@@ -1,19 +1,28 @@
+html{
+	margin: 5px 10% 1em;
+}
 body{
 	background-color: #2E3A69;
 	color:#E0E0E0;
+	font-family: Cambria, Georgia, Helvetica;
 	text-align: center;
-	font-family: Andada, Georgia, Helvetica;
 }
 h2{
 	color:#E0E0E0;
+	text-align: center;
+}
+h4{
+	color: #E9967A;
+	text-align: left;
 }
 a{
-	color:#F0F0F0;
+	color:#E9967A;
 }
-div.ex{
-	color: yellow;
-	height:35;
-	width:50;
+p{
+	text-align: left;
+}
+h1{
+	color: #FFA07A;
 }
 circle.sun{
 	color: yellow;
