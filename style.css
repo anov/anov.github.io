@@ -1,11 +1,12 @@
 html{
-	margin: 5px 10% 1em;
+	margin: 5px 20% 1em;
 }
 body{
 	background-color: #2E3A69;
 	color:#E0E0E0;
-	font-family: Cambria, Georgia, Helvetica;
+	font-family: Georgia;
 	text-align: center;
+	line-height: 1.5;
 }
 h2{
 	color:#E0E0E0;
