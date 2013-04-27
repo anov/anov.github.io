@@ -1,0 +1,12 @@
+{"circles":
+	[
+		{"name": "first circle", 
+		"value":10,
+		"color" : "blue"
+		},
+		{"name": "second",
+		"value": 20,
+		"color": "yellow"
+		}
+	]
+}
